@@ -16,7 +16,7 @@
      },
      methods: {
          getMessage() {
-             const path = 'http://192.168.1.16:5000/ping';
+             const path = 'https://terzeron.com/flask/ping';
              axios.get(path)
                   .then((res) => {
                       this.msg = res.data;
