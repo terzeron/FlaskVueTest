@@ -4,20 +4,25 @@
 
 # Setup
 ## Python
+* `mkdir backend`
 * `cd backend`
 * `pip install -r requirements.txt`
 * `./index.py`
 ## Javascript
+* `sudo npm install -g @vue/cli`
+* `sudo npm install -g @vue/cli-init`
+* `vue create frontend`
+* `vue init webpack frontend`
 * `cd frontend`
-* `npm install -g @vue/cli`
-* `npm install -g @vue/cli-init`
-* `vue create client`
-* `cd client`
-* `npm install --save vue-router`
+* `npm install`
 * `npm install --save axios`
 * `npm install --save bootstrap`
 * `npm install --save bootstrap-vue`
-* `yarn serve` or `npm run serve`
+* `npm run dev`
+
+# Deploy
+* `cd frontend`
+* `npm run build`
 
 # Copyright
 * ©Copyright 2017 - 2020 TestDriven Labs.
