@@ -108,9 +108,10 @@
 
 <script>
  import axios from 'axios';
- import Alert from './Alert.vue';
+ import Alert from './Alert';
  
  export default {
+     name: 'Books',
      data() {
          return {
              books: [],
