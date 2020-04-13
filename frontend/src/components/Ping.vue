@@ -16,7 +16,7 @@
      },
      methods: {
          getMessage() {
-             const path = 'https://terzeron.com/flask/healthcheck';
+             const path = 'https://api.terzeron.com/book/healthcheck';
              axios.get(path)
                   .then((res) => {
                       this.msg = res.data;

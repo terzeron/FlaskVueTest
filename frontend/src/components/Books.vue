@@ -135,7 +135,7 @@
      },
      methods: {
          getBooks() {
-             const path = 'https://terzeron.com/flask/books';
+             const path = 'https://api.terzeron.com/book/books';
              axios.get(path)
                   .then((res) => {
                       this.books = res.data.books;
@@ -145,7 +145,7 @@
                   });
          },
          addBook(payload) {
-             const path = 'https://terzeron.com/flask/books';
+             const path = 'https://api.terzeron.com/book/books';
              axios.post(path, payload)
                   .then(() => {
                       this.getBooks();
@@ -158,7 +158,7 @@
                   })
          },
          updateBook(payload, bookID) {
-             const path = `https://terzeron.com/flask/books/${bookID}`;
+             const path = `https://api.terzeron.com/book/books/${bookID}`;
              axios.put(path, payload)
                   .then(() => {
                       this.getBooks();
@@ -174,7 +174,7 @@
              this.editForm = book;
          },
          removeBook(bookID) {
-             const path = `https://terzeron.com/flask/books/${bookID}`;
+             const path = `https://api.terzeron.com/book/books/${bookID}`;
              axios.delete(path)
                   .then(() => {
                       this.getBooks();
